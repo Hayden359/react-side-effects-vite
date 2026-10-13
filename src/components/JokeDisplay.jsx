@@ -3,8 +3,12 @@
 const JokeDisplay = ({ joke, loading }) => {
   return (
     <div className="joke-container">
-      {/* Step 2: If `loading` is true, display "Loading..." */}
-      {/* Step 3: Otherwise, display the joke */}
+      {/* Step 2: If `loading` is true, display "Loading..." */
+    loading == true ? (
+        <p>Loading...</p>
+      ) : (
+        <p>{joke}</p>
+      )}
     </div>
   )
 }
